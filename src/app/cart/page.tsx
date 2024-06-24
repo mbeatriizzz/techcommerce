@@ -1,10 +1,10 @@
 "use client";
 
 
-export default function Cadastro() {
+export default function Cart() {
   return (
     <div className="text-black">
-      Pagina de cadastro
+      Pagina do carrinho
     </div>
   );
 }
