@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { FaHeart, FaRegUser } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import Link from 'next/link';
-import Search from './search';
+import Link from "next/link";
+import Search from "./search";
 
 export default function Header() {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -24,7 +24,7 @@ export default function Header() {
       <div className="flex items-center gap-2">
         <Link href="/login" className="flex items-center gap-1">
           <FaRegUser className="text-blueMarine-700" />
-          <p>Registrar-se/Entrar</p>
+          <p>Entrar/Registrar</p>
         </Link>
 
         <Link href="/carrinho" className="flex items-center gap-1">

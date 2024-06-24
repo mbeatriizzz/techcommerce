@@ -8,12 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors:{
-        blueMarine:{
-          700:'#0084d0',
-          600:'#f2f9fb'
-        }
-      }
+      colors: {
+        blueMarine: {
+          700: "#0084d0",
+          600: "#f2f9fb",
+        },
+      },
     },
   },
   plugins: [],

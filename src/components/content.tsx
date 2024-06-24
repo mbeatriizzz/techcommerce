@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ProductProps {
   name: string;
@@ -42,9 +42,9 @@ const ProductComponent: React.FC<ProductProps> = ({ name }) => (
 
 const Content = () => {
   const categories = [
-    { title: 'Aproveite a melhor oferta em', category: 'Smarthphones' },
-    { title: 'Compre das', category: 'Top Categorias' },
-    { title: 'Top', category: 'Marcas de Eletronicos' }
+    { title: "Aproveite a melhor oferta em", category: "Smarthphones" },
+    { title: "Compre das", category: "Principais Categorias" },
+    { title: "Top", category: "Marcas de Eletronicos" },
   ];
 
   return (
@@ -55,9 +55,9 @@ const Content = () => {
             {c.title} <span className="text-blueMarine-700">{c.category}</span>
           </h2>
 
-          {c.category === 'Smarthphones' && <CategoryAComponent />}
-          {c.category === 'Top Categorias' && <CategoryBComponent />}
-          {c.category === 'Marcas de Eletronicos' && <CategoryCComponent />}
+          {c.category === "Smarthphones" && <CategoryAComponent />}
+          {c.category === "Principais Categorias" && <CategoryBComponent />}
+          {c.category === "Marcas de Eletronicos" && <CategoryCComponent />}
         </div>
       ))}
     </div>
