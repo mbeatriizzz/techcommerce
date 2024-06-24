@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaRegUser } from "react-icons/fa";
+import { FaHeart, FaRegUser } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import Link from 'next/link';
 import Search from './search';
@@ -30,6 +30,11 @@ export default function Header() {
         <Link href="/carrinho" className="flex items-center gap-1">
           <IoCartOutline className="text-blueMarine-700" />
           <p>Carrinho</p>
+        </Link>
+
+        <Link href="/carrinho" className="flex items-center gap-1">
+          <FaHeart className="text-blueMarine-700" />
+          <p>Lista de Desejos</p>
         </Link>
       </div>
     </header>
