@@ -3,6 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import relogio from "../../assets/highlights/relogio.png";
+import iphone from "../../assets/highlights/iphone.png";
+import jbl from "../../assets/highlights/jbl.png";
+
+import Image from "next/image";
 
 
 export default function Carousel() {
@@ -27,14 +32,26 @@ export default function Carousel() {
   return (
     <div>
       <Slider ref={sliderRef} {...settings}>
-        <div className="w-full sm:w-1/2 lg:w-1/3 h-64 bg-red-500 rounded-lg">
-          <h3 className="text-black">Slide 1</h3>
+        <div className="w-full sm:w-1/2 lg:w-1/3 h-6 rounded-lg">
+          <Image
+                src={relogio}
+                alt="Relógio"
+                className="rounded-lg"
+              />        
         </div>
-        <div className="w-full sm:w-1/2 lg:w-1/3 h-64 bg-blue-500 rounded-lg">
-          <h3>Slide 2</h3>
+        <div className="w-full sm:w-1/2 lg:w-1/3 h-64 rounded-lg">
+           <Image
+                src={iphone}
+                alt="Iphone"
+                className="rounded-lg"
+              />        
         </div>
-        <div className="w-full sm:w-1/2 lg:w-1/3 h-64 bg-purple-500 rounded-lg">
-          <h3>Slide 3</h3>
+        <div className="w-full sm:w-1/2 lg:w-1/3 h-64 rounded-lg">
+           <Image
+                src={jbl}
+                alt="JBL"
+                className="rounded-lg"
+              />        
         </div>
       </Slider>
 
