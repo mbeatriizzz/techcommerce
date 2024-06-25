@@ -16,9 +16,8 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between text-gray-500">
+    <header className="flex justify-between items-center text-gray-500">
       <h1 className="text-blueMarine-700 font-bold">TechCommerce</h1>
-
       <Search query={query} onChange={handleChange} onSubmit={handleSubmit} />
 
       <div className="flex items-center gap-2">

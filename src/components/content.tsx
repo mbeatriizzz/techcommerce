@@ -2,40 +2,51 @@ import React from "react";
 
 interface ProductProps {
   name: string;
+  image: string;
 }
 
 const CategoryAComponent = () => (
   <div className="flex flex-wrap">
-    <ProductComponent name="Produto 1" />
-    <ProductComponent name="Produto 2" />
-    <ProductComponent name="Produto 3" />
-    <ProductComponent name="Produto 4" />
-    <ProductComponent name="Produto 5" />
+    <ProductComponent name="Produto 1" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto 2" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto 3" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto 4" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto 5" image="/assets/products/smart1.png" />
   </div>
 );
 
 const CategoryBComponent = () => (
   <div className="flex flex-wrap">
-    <ProductComponent name="Produto X" />
-    <ProductComponent name="Produto Y" />
-    <ProductComponent name="Produto Z" />
-    <ProductComponent name="Produto T" />
-    <ProductComponent name="Produto U" />
+    <ProductComponent name="Produto X" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto Y" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto Z" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto T" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto U" image="/assets/products/smart1.png" />
   </div>
 );
 
 const CategoryCComponent = () => (
   <div className="flex flex-wrap">
-    <ProductComponent name="Produto Alpha" />
-    <ProductComponent name="Produto Beta" />
-    <ProductComponent name="Produto Gama" />
-    <ProductComponent name="Produto Ninja" />
-    <ProductComponent name="Produto Jungkoki do bitiesi" />
+    <ProductComponent
+      name="Produto Alpha"
+      image="/assets/products/smart1.png"
+    />
+    <ProductComponent name="Produto Beta" image="/assets/products/smart1.png" />
+    <ProductComponent name="Produto Gama" image="/assets/products/smart1.png" />
+    <ProductComponent
+      name="Produto Ninja"
+      image="/assets/products/smart1.png"
+    />
+    <ProductComponent
+      name="Produto Jungkoki do bitiesi"
+      image="/assets/products/smart1.png"
+    />
   </div>
 );
 
-const ProductComponent: React.FC<ProductProps> = ({ name }) => (
+const ProductComponent: React.FC<ProductProps> = ({ name, image }) => (
   <div className="m-2 p-4 bg-gray-200 rounded-lg shadow-md">
+    <img src={image} className="w-full h-auto mb-2 rounded" />
     <p>{name}</p>
   </div>
 );
